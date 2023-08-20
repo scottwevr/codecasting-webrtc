@@ -1,0 +1,15 @@
+pre {
+    background: #DDDDDD;
+    width: 500px;
+    height: 200px;
+    padding: 0px;
+  }
+  
+pre > code {
+    outline: none;
+    display: block;
+  }
+
+
+
+  
