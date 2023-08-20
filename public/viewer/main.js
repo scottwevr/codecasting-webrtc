@@ -2,7 +2,7 @@
 
 async function joinCodecast() {
   
-  const signalingServer = new WebSocket(`ws://${window.location.host}?role=viewer`);
+  const signalingServer = new WebSocket(`wss://${window.location.host}?role=viewer`);
   await new Promise((resolve) =>
     signalingServer.addEventListener("open", resolve)
   );

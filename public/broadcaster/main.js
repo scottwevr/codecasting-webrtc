@@ -1,7 +1,7 @@
 import {broadcast} from "./modules/broadcast.js";
 
 async function beginCodecast() {
-  const signalingServer = new WebSocket(`ws://${window.location.host}?role=broadcaster`);
+  const signalingServer = new WebSocket(`wss://${window.location.host}?role=broadcaster`);
   await new Promise((resolve) =>
     signalingServer.addEventListener("open", resolve)
   );
